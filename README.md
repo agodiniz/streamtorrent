@@ -1,12 +1,12 @@
 # player-sdk-js
-Player SDK for online torrent streaming on your site
+Player SDK para streaming de torrent online
 
-## Features
-* Supports magnet-uri and external torrent-files
-* Supports video (avi, mkv, mp4, m4v) with subtitles (vtt, srt)
-* No additional plugins/extensions required
+## Recursos
+* Suporta magnet-uri e arquivos torrent externos
+* Suporta vídeo (avi, mkv, mp4, m4v) com legendas (vtt, srt)
+* Não são necessários plug-ins / extensões adicionais
 
-## Basic usage
+## Uso básico
 ```html
 ...
     <div id="player" class="webtor" />
@@ -52,17 +52,17 @@ Player SDK for online torrent streaming on your site
 ```
 [Here is live example](https://webtor.io/sdk-example.html)
 
-## Player configuration
-Attribute  | Description
+## Configuração do Player
+Atributo  | Descrição
 -----------|-------------
-id         | Element id where player will be embedded
-magnet     | Magnet-uri (torrentUrl ot magnet is required)
-width      | Width of an iframe (might be any css width value: 800px, 100%, etc... 800px by default)  
-height     | Height of an iframe (might be any css width value: 800px, 100%, etc... optional)
-torrentUrl | Url of the torrent-file (HTTP-server **MUST** include header "Access-Control-Allow-Origin: *" to allow torrent-file download on client-side)
-theme      | Can be "light" or "dark". If not set theme will be selected automatically (optional)
-poster     | Url to the poster image (optional)
-on         | Callback-function to capture player events (optional)
+id         | ID do elemento onde o player será incorporado
+magnet     | Magnet-uri (torrentUrl ot magnet é necessário)
+width      | Largura de um iframe (pode ser qualquer valor de largura css: 800px, 100%, etc... 800px por padrão)  
+height     | Altura de um iframe (pode ser qualquer valor de largura css: 800px, 100%, etc... opcional)
+torrentUrl | Url do arquivo torrent (servidor HTTP ** DEVE ** incluir o header "Access-Control-Allow-Origin: *" para permitir o download do arquivo torrent no lado do cliente)
+theme      | Pode ser "claro" ou "escuro". Se não for definido, o tema será selecionado automaticamente (opcional)
+poster     | Url para a imagem do pôster (opcional)
+on         | Callback-function para capturar eventos do jogador (opcional)
 subtitles  | Array of subtitles. Every subtitle **MUST** include `srclang`, `label`, `src` (optional)
 title      | Replaces original file name in a header with specific title (optional)
 imdbId     | Helps to find subtitles and additional metadata (example values 'tt0133093' or '0133093' or even '133093', optional)
